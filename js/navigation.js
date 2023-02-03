@@ -1,10 +1,10 @@
-const navToggle = document.querySelector('#navToggle');
-const nav = document.querySelector('#nav-links');
-const menuIcon = document.querySelector('.menu-icon');
-const closeIcon = document.querySelector('.close-icon');
+export const navToggle = document.querySelector('#navToggle');
+export const nav = document.querySelector('#nav-links');
+export const menuIcon = document.querySelector('.menu-icon');
+export const closeIcon = document.querySelector('.close-icon');
 
 
-navToggle.addEventListener('click', () => {
+export const fnNavToggle = navToggle.addEventListener('click', () => {
     nav.classList.toggle('nav-open');
     menuIcon.classList.toggle('hide');
     closeIcon.classList.toggle('show');

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/navigation.css">
-    <link rel="stylesheet" href="./css/index-style.css">
+    <link rel="stylesheet" href="./css/register-login.css">
     <title>Aplikacja - moje wydatki</title>
 </head>
 <body>
@@ -25,30 +25,38 @@
             <nav class="nav-links" id="nav-links">
                 <ul>
                     <li class="nav-link"><a href="registration.html" aria-label="registration">Rejestracja</a></li>
-                    <li class="nav-link"><a href="login.html" aria-label="login">Logowanie</a></li>
                 </ul>
             </nav>
         </div>
     </div>
+
     <main class="main">
-        <div class="content">
-            <h1 class="header">Moje Transakcje</h1>
-            <p class="text">Aplikacja Moje Transakcje pozwala na kontrolowanie wydatków <br>
-                oraz <br>
-                dobre zarządzanie finansami. </p>
-            <p class="text">Zapraszamy!</p>
-        </div>
+      <div class="container-main">
+        <form id="form" class="form">
+          <h2>Logowanie</h2>
+          <div class="form-control">
+            <label for="emailOrUsername">Nazwa użytkownika lub Email:</label>
+            <input type="text" id="emailOrUsername">
+            <small>Błąd</small>
+          </div>
+          <div class="form-control">
+            <label for="password">Hasło:</label>
+            <input type="password" id="password">
+            <small>Błąd</small>
+          </div>
+          <button class="btn" type="submit">Zaloguj</button>
+        </form>
+      </div>
     </main>
+
     <footer>
         <p class="foot">&#169; Agata Stoch <span class="year"></span>
         </p>
     </footer>
-    <!-- <script>
+    <script>
         const year = document.querySelector('.year');
         year.textContent = `${new Date().getFullYear()}`
-    </script> -->
+    </script>
     <script type="module" src="./js/index.js"></script>
 </body>
 </html>
-
-
