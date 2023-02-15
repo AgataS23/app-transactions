@@ -1,0 +1,134 @@
+:root {
+    --dark-blue-color: rgb(28, 2, 119);
+    --blue-color: rgb(33, 3, 144);
+    --lighter-blue-color: rgb(55, 5, 237);
+    --light-blue-color: rgb(5, 105, 237);
+    --white-color: rgb(255, 255, 255);
+    --light-color:rgb(247, 246, 246);
+    --light2-color: rgb(240, 240, 240);
+    --lighter-grey-color: rgb(198, 197, 197);
+    --grey-color: rgb(128, 128, 128);
+    --grey-darker-color: rgba(66, 68, 90, 1);
+    --error-color: rgb(255, 0, 0);
+    --success-color: rgb(0, 128, 0);
+  }
+
+   .main {
+    background-color: rgb(213, 227, 247);
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1024px;
+    height: calc(100vh - 6rem);
+    margin: 0 auto;
+    padding: 10rem 2rem;
+  }
+ .container-main {
+      background: var(--light-color);
+      border-radius: 1.8rem;
+      box-shadow: .1rem .2rem 2rem -.8rem var(--grey-darker-color);
+      width: 100%;
+      padding: 5px 15px 15px 15px;
+      margin: 2rem auto;
+  }
+   h2 {
+      color: var(--dark-blue-color);
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 2rem 0;
+  }
+  .form {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .form-control {
+      padding-bottom: 2rem;
+      position: relative;
+  }
+  label {
+      color: var(--grey-color);
+      display: block;
+      margin-bottom: .5rem;
+      font-size: 1.2rem;
+  }
+  input {
+      border: 2px solid var(--light2-color);
+      border-radius: .4rem;
+      display: block;
+      width: 100%;
+      padding: .5rem;
+      font-size: 1.2rem;
+  }
+  input:focus {
+      outline: 0;
+      border-color: var(--lighter-grey-color);
+  }
+  .form-control small {
+      font-size: 1rem;
+      background: var(--white-color);
+      color: var(--error-color);
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      visibility: hidden;
+  }
+  .form-control small.long {
+    bottom: 0;
+  }
+  button {
+      cursor: pointer;
+      background: var(--dark-blue-color);
+      border: .2rem solid var(--dark-blue-color);
+      border-radius: .4rem;
+      color: var(--white-color);
+      padding: 1rem;
+      margin-top: 1rem;
+      font-size: 1.6rem;
+  }
+  .form-control.error small {
+      visibility: visible;
+  }
+  .form-control.error input {
+    border-color: var(--error-color);
+  }
+  .form-control.success input {
+    border-color: var(--success-color);
+  }
+
+  @media screen and (min-width: 425px) {
+    .container-main {
+        width: 80%;
+    }
+  }
+
+  @media screen and (min-width: 476px) {
+    .container-main {
+        width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 550px) {
+    .container-main {
+        width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    .container-main {
+        width: 55%;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .container-main {
+        width: 48%;
+    }
+  }
+
+  @media screen and (min-width: 855px) {
+    .container-main {
+        width: 40%;
+    }
+  }
