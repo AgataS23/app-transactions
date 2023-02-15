@@ -44,7 +44,7 @@
       justify-content: center;
   }
   .form-control {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
       position: relative;
   }
   label {
@@ -71,8 +71,11 @@
       color: var(--error-color);
       position: absolute;
       left: 1rem;
-      bottom: .5rem;
+      bottom: 1rem;
       visibility: hidden;
+  }
+  .form-control small.long {
+    bottom: 0;
   }
   button {
       cursor: pointer;
